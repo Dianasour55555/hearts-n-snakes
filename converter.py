@@ -6,8 +6,8 @@ import mne
 import matplotlib.pyplot as plt
 
 
-mypath = "C:/Users/Lenovo/PycharmProjects/pythonProject4/EDF/"
-newpath = "C:/Users/Lenovo/PycharmProjects/pythonProject4/"
+mypath = "Testovaya_baza2/Тестовая_База_РОХМИНЕ_12_стандарт/EDF"
+newpath = "Testovaya_baza2"
 for f_name in listdir(mypath):
     if f_name[9:] == 'edf':
         f = mne.io.read_raw_edf(os.path.join(mypath, f_name))
