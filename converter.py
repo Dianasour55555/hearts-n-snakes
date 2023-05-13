@@ -16,10 +16,10 @@ for f_name in listdir(mypath):
         np.savetxt(os.path.join(newpath, f_new_name), f.get_data().T, delimiter=',', header=header)
         pd_file = pd.read_csv(os.path.join(newpath, f_new_name), sep=',')
         pd_file['time'] = np.arange(0.0, 10.0, 0.002)
-        for name in list(pd_file.columns)[0:12]:
-             plot = pd_file.plot(x='time', y=name)
-             plot_name = f_name[0: -3] + '_plot_' + '{}'.format(name) + '.png'
-             plt.savefig(plot_name)
+        #for name in list(pd_file.columns)[0:12]:
+        #     plot = pd_file.plot(x='time', y=name)
+        #     plot_name = f_name[0: -3] + '_plot_' + '{}'.format(name) + '.png'
+        #     plt.savefig(plot_name)
 
 
 
