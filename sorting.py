@@ -19,9 +19,13 @@ for f_name in listdir('Testovaya_baza2'):
             new_location = shutil.move(name, 'brad')
 
         elif freq > 1.7:
-            pass
+            name = f_name[:9] + '._plot_ECG II-Ref.png'
+            path.exists(name)
+            new_location = shutil.move(name, 'tach')
         else:
-            pass
+            name = f_name[:9] + '._plot_ECG II-Ref.png'
+            path.exists(name)
+            new_location = shutil.move(name, 'okay')
 
 
 
